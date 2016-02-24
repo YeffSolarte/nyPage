@@ -1,0 +1,42 @@
+<nav class="se-gris pad-lag text-center">
+	<ul class="no-lista" >
+		<li class="col-md-3 inlin-block pacifico cazul mediano"><a ui-sref="home">Amor del Bueno</a></li>
+		<li class="col-md-3 inlin-block"><a href="estrategias.html">Sorpresa</a></li>
+		<li class="col-md-3 inlin-block"><a ui-sref="beautifulMoments">Bellos Momentos</a></li>
+	</ul>
+</nav>
+<div class="text-center" >
+	<h1 class="pacifico grande azulejo">En la Actualidad</h1>
+	<p class="flower">Por que cuando me falta todo, no me faltas tu <i class="glyphicon glyphicon-heart" id="ic1"></i></p>
+</div>
+<div class="container">
+	<div id="myCarousel" class="carousel slide">
+		<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+			<uib-slide ng-repeat="image in mainCtrl.imagesInSlide" active="slide.active">
+				<img ng-src="{{image.image}}" style="margin:auto;">
+				<div class="carousel-caption">
+					<p>{{image.text}}</p>
+				</div>
+			</uib-slide>
+		</uib-carousel>
+	</div>
+</div>
+<br>
+<hr>
+<br>
+<section>
+	<div class="text-center container marketing" >
+		<div class=" col-md-4 inlin-block esp-der">
+				<img class="img-circle" src="img/img1.jpg" alt="image1" width="140" height="140">
+				<h2 class="flower">Risas que nunca faltan</h2>
+				<h3 class="dancing">Entre risas y mas risas nos divertimos al maximo, por que el verdadero amor no solo son besos, abrazos o cartas, es la confianza, la ayuda mutua y la felicidad mutua</h3></div>
+		<div class=" col-md-4 inlin-block esp-der vete-arriba">
+				<img class="img-circle" src="img/img2.jpg" alt="image2" width="140" height="140">
+				<h2 class="flower">Excelentes Momentos</h2>
+				<h3 class="dancing">Por que ni en los buenos ni en los malos momentos, me faltas, siempre me sacas una sonrisa en el rostro.</h3></div>
+		<div class=" col-md-4 inlin-block esp-der vete-arriba">
+				<img class="img-circle" src="img/img3.jpg" alt="image3" width="140" height="140">
+				<h2 class="flower">Besos</h2>
+				<h3 class="dancing">Por que tu frente,tu nariz y tus cachetes, son las 3 cosas mas tiernas y que mas me gusta besar! </h3></div>
+	</div>
+</section>
