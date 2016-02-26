@@ -1,18 +1,18 @@
 <section>
     <nav class="se-gris pad-lag text-center">
         <ul class="no-lista" >
-            <li class="col-md-3 inlin-block pacifico cazul mediano"><a ui-sref="home">Amor del Bueno</a></li>
-            <li class="col-md-3 inlin-block"><a href="estrategias.html">Sorpresa</a></li>
-            <li class="col-md-3 inlin-block"><a ui-sref="beautifulMoments">Bellos Momentos</a></li>
+            <li class="col-md-3 col-xs-12 inlin-block pacifico cazul mediano"><a ui-sref="home">Amor del Bueno</a></li>
+            <li class="col-md-3 col-xs-6 inlin-block"><a href="estrategias.html">Sorpresa</a></li>
+            <li class="col-md-3 col-xs-6 inlin-block"><a ui-sref="beautifulMoments">Bellos Momentos</a></li>
         </ul>
     </nav>
     <div class="text-center" >
         <h1 class="pacifico grande azulejo">Nuestros Bellos Momentos</h1>
     </div>
-    <div class="photosContainer">
-        <div class="photoIndividual" ng-repeat="photo in mainCtrl.beautifulPhotos">
+    <div class="photosContainer container">
+        <div class="photoIndividual col-lg-2 col-md-3  col-xs-6" ng-repeat="photo in mainCtrl.beautifulPhotos">
             <figure ng-click="mainCtrl.showImgage(photo.img)">
-                <img src="{{photo.img}}" alt="{{photo.textImg}}"/>
+                <img ng-src="{{photo.img}}" alt="{{photo.textImg}}"/>
             </figure>
         </div>
     </div>

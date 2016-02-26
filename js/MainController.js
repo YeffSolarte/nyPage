@@ -41,6 +41,7 @@
         activate();
         function activate(){
             var photos = 53;
+
             for (var x = 0; x < photos; x++){
                 vm.beautifulPhotos[x] = {
                     img : 'img/photo ('+(x+1)+').jpg',
@@ -55,7 +56,7 @@
                 animation: true,
                 templateUrl: 'views/imagesModal.html',
                 controller: 'imagesController',
-                size: 'lg',
+                size: 'imagesModal',
                 resolve: {
                     image: function () {
                         return image;
