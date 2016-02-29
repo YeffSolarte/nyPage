@@ -34,6 +34,12 @@
                 controller: "MainController",
                 controllerAs: "mainCtrl"
             })
+            .state('surprise', {
+                url: "/surprise",
+                templateUrl: "views/sorpresa.html",
+                controller: "MainController",
+                controllerAs: "mainCtrl"
+            })
             .state('last', {
                 url: "/last",
                 templateUrl: "views/Pasado.html",
